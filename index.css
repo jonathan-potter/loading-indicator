@@ -1,0 +1,55 @@
+* {
+    list-style: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f88;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #8f8;
+    width: 400px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+}
+
+li {
+    width: 100%;
+    aspect-ratio: 185 / 120;
+
+    background: linear-gradient(0.33turn, black, white, black);
+    background-size: 200%;
+    background-attachment: fixed;
+
+    animation-name: background-gradient;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
