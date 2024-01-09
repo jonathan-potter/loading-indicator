@@ -33,13 +33,14 @@ li {
     width: 100%;
     aspect-ratio: 185 / 120;
 
-    background: linear-gradient(0.33turn, black, white, black);
-    background-size: 200%;
+    background: linear-gradient(0.33turn, #8f8, #88f, #8f8);
+    background-size: 150%;
     background-attachment: fixed;
 
     animation-name: background-gradient;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    border-radius: 6px;
 }
 
 @keyframes background-gradient {
